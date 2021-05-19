@@ -1,7 +1,7 @@
 # use the existing Jenkins image so we have access to the install-plugins
 # script. It also lets us avoid pulling down dependencies that are already in
 # the base image
-FROM quay.io/openshift/origin-jenkins:latest AS jenkins
+FROM quay.io/openshift/origin-jenkins:4.5 AS jenkins
 
 USER root
 
